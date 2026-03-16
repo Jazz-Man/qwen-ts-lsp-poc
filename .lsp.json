@@ -1,7 +1,70 @@
 {
 	"typescript": {
-		"command": "typescript-language-server",
+		"command": "./node_modules/.bin/vtsls",
 		"args": ["--stdio"],
+		"trustRequired": true,
+		"settings": {
+			"javascript": {
+				"implicitProjectConfig": {
+					"experimentalDecorators": true
+				}
+			},
+			"js/ts": {
+				"implicitProjectConfig": {
+					"checkJs": true,
+					"experimentalDecorators": true,
+					"strictFunctionTypes": true,
+					"strictNullChecks": true
+				}
+			},
+			"typescript": {
+				"format": {
+					"enable": false
+				},
+				"implementationsCodeLens": {
+					"enable": true,
+					"showOnInterfaceMethods": true
+				},
+				"inlayHints": {
+					"enumMemberValues": {
+						"enabled": true
+					},
+					"functionLikeReturnTypes": {
+						"enabled": true
+					},
+					"parameterNames": {
+						"enabled": "all"
+					},
+					"parameterTypes": {
+						"enabled": true
+					},
+
+					"propertyDeclarationTypes": {
+						"enabled": true
+					},
+
+					"variableTypes": {
+						"enabled": true,
+						"suppressWhenTypeMatchesName": true
+					}
+				},
+				"referencesCodeLens": {
+					"enabled": true,
+					"showOnAllFunctions": true
+				},
+				"suggest": {
+					"completeFunctionCalls": true
+				},
+				"tsserver": {
+					"experimental": {
+						"enableProjectDiagnostics": true
+					}
+				},
+				"validate": {
+					"enable": true
+				}
+			}
+		},
 		"extensionToLanguage": {
 			".ts": "typescript",
 			".tsx": "typescriptreact",
