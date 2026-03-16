@@ -22,7 +22,8 @@
 				"diagnosticsName": true,
 				"quickinfo": true,
 				"completions": true,
-				"multipleEffectCheck": true
+				"multipleEffectCheck": true,
+				"diagnosticSeverity": {}
 			}
 		]
 	},
