@@ -9,12 +9,14 @@
 	"devDependencies": {
 		"@effect/language-service": "^0.80.0",
 		"@tsconfig/bun": "^1.0.10",
-		"@types/bun": "latest"
+		"@types/bun": "latest",
+		"@vtsls/language-server": "^0.3.0"
 	},
 	"peerDependencies": {
 		"typescript": "^5"
 	},
 	"dependencies": {
+		"@effect/platform-bun": "^4.0.0-beta.33",
 		"effect": "^4.0.0-beta.33"
 	}
 }
