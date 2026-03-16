@@ -1,0 +1,20 @@
+{
+	"name": "qwen-ts-lsp-poc",
+	"module": "index.ts",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"lsp:prepare": "effect-language-service patch"
+	},
+	"devDependencies": {
+		"@effect/language-service": "^0.80.0",
+		"@tsconfig/bun": "^1.0.10",
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"dependencies": {
+		"effect": "^4.0.0-beta.33"
+	}
+}
